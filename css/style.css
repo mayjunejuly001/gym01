@@ -1,0 +1,270 @@
+/* css reset */
+* {
+    margin: 0px;
+    padding: 0px; 
+    
+
+
+}
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    background-color: rgb(255, 255, 255);
+}
+/* Css variables */
+:root {
+    --navbar-height: 50px;
+}
+
+/* Navigation Bar */
+#navbar {
+    display: flex;
+    position: sticky;
+    /* justify-content:unset; */
+    align-items: center;
+        
+    top: 0px;
+}
+
+/* NAVIGATION BAR :LOGO AND IMAGE */
+
+#logo {
+    margin: 34px 45px;
+
+}
+
+#logo img {
+    margin: -38px -25px;
+    height: 100px;
+
+}
+
+/* NAVIGATION BAR :LIST STYLE */
+
+#navbar ul {
+    display: flex;
+    font-family: 'Borel', cursive;
+
+}
+
+#navbar::before {
+    content: "";
+    background-color: rgb(0, 0, 0);
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.6;
+
+
+
+}
+
+#navbar ul li {
+    /* color: white; */
+
+    list-style: none;
+    font-size: 1rem;
+}
+
+#navbar ul li a {
+    display: block;
+    color: white;
+    padding: 2px 20px;
+    /* border: 2px solid red; */
+    border-radius: 20px;
+    text-decoration: none;
+
+}
+
+#navbar ul li a:hover {
+    color: rgb(0, 0, 0);
+    background-color: white;
+}
+
+/* HOME SECTION  */
+#home {
+    display: flex;
+    flex-direction: column;
+    height: 602px;
+    padding: 3px 200px;
+    justify-content: center;
+    align-items: center;
+
+}
+
+#home::before {
+    content: "";
+    background: url(../bg3.jpg)no-repeat center center/cover;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 828px;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.85;
+}
+
+#home h1 {
+    color: rgb(255, 174, 0);
+    text-shadow: 3px 3px 4px rgb(95, 65, 1);
+    text-align: center;
+    font-family: 'Carter One', cursive;
+
+
+}
+
+#home p {
+    color: white;
+    text-align: center;
+    text-shadow: 3px 3px 4px rgb(0, 0, 0);
+    font-size: 1.3rem;
+    font-family: 'Carter One', cursive;
+
+}
+/* CLIENT SECTION  */
+#client-section{
+    position: relative;
+}
+#client-section::before{
+    content:"";
+    position: absolute;
+    background: url('../bg2.jpg') no-repeat center  center/cover;
+    width: 100%;
+    height: 145%;
+    z-index: -1;
+    opacity: 0.85;
+    
+
+    
+}
+#clients{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.client-items{
+    padding: 34px;
+
+}
+#Contact h1{
+    padding-top: 28px;
+    color:rgb(203,115, 25);
+}
+#clients img{
+    height: 125px;
+}
+
+#client-center{
+    padding-top: 60px;  
+    color: white;
+    font-family: 'Carter One', cursive;
+    font-size: 3.5rem;
+}
+/* SERVICES SECTION */
+#services-container {
+    margin-top: 140px;
+}
+
+#services {
+    margin: 34px;
+    display: flex;
+}
+
+#services .box {
+    border: 2px solid red;
+    padding: 34px;
+    margin: 3px 6px;
+    border-radius: 25px;
+    background-color: rgb(255, 191, 53);
+
+}
+
+#services .box img {
+    height: 100px;
+    margin: auto;
+    display: block;
+
+}
+
+/* CONTACT SECTION */
+#Contact{
+    position: relative;
+    margin-top: 195px;
+}
+#Contact::before{
+    content:"";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.89;
+    background: url(../contact.jpg) no-repeat center center/cover;
+}
+#contact-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 34px;
+}
+#contact-box form{
+    width: 40%;
+    
+}
+#contact-box label{
+    font-size: 1.3rem;
+    font-family: 'Carter One', cursive;
+
+
+
+}
+#contact-box input,
+#contact-box textarea{
+    width: 100%;
+    padding: 0.5rem;
+    border-radius: 9px;
+    font-size: 1.1rem;
+
+}
+
+/* Footer  */
+footer{
+    background: black;
+    color: white;
+    padding: 9px 20px;
+}
+/* UTILITY CLASSES */
+.h-primary {
+    font-size: 3rem;
+    padding: 0px;
+    font-family: 'Carter One', cursive;
+}
+
+.h-secondary {
+    font-size: 2rem;
+    padding: 0px;
+    font-family: 'Carter One', cursive;
+}
+
+
+.btn {
+    padding: 6px 20px;
+    border: 2px solid white;
+    background-color: rgb(255, 174, 0);
+    color: white;
+    margin: 17px;
+    font-size: 1.5rem;
+    border-radius: 10px;
+    font-family: 'Carter One', cursive;
+    cursor: pointer;
+
+}
+
+.center {
+    text-align: center;
+}
